@@ -30,7 +30,7 @@ module.exports = VueFormat =
     editor = atom.workspace.getActiveTextEditor()
     text = editor.getText()
     newTextArr = []
-    ['css','html', 'js'].forEach((val, index) ->
+    ['html', 'js', 'css'].forEach((val, index) ->
       newText = self.replaceText(text, val)
       newTextArr.push(newText)
     )
